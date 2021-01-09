@@ -13,6 +13,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .calc-container{
@@ -38,6 +39,10 @@ body{
     background-color: slategray;
 }
 
+#value{
+    color: black;
+}
+
 .button-container{
     margin-top: 10px;
 }
@@ -56,6 +61,7 @@ button{
     background-color: #10182F;
     color: white;
     outline: none;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 button:hover{
