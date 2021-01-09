@@ -55,10 +55,12 @@ button{
     font-size: 2rem;
     background-color: #10182F;
     color: white;
+    outline: none;
 }
 
-.button-num{
-    background-color: #F2AA4C;
+button:hover{
+    cursor: pointer;
+    padding-bottom: 15px;
 }
 
 [id = "0"]{
