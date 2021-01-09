@@ -81,5 +81,22 @@ button:hover{
     background-color: grey;
 }
 
+@media only screen and (max-width: 450px){
+    .calc-container{
+        width: 80vw;
+    }
+    
+    .display{
+        font-size: 1.3em;
+    }
+
+    button{
+        width: 18vw;
+    }
+
+    [id = '0']{
+        width: 36vw;
+    }
+}
 
 

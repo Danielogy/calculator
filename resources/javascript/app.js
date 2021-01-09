@@ -15,7 +15,7 @@ btns.forEach(btn =>{
        let that = e.target.id;
        
        const operands = displayValue.textContent += e.target.value;
-       displayValue.style.cssText = 'font-size: 3rem'; 
+       displayValue.style.cssText = 'font-size: 1.3em'; 
 
        //set the first operand of expressions object after hitting the operator
        if(that == 'mult' || that == 'divide' || that == 'plus' || that == 'minus' || that == 'mod'){
@@ -145,10 +145,10 @@ function resizeDisplay(answer){
     if (answer.toString().length >= 15) {
         let rounded = Math.round(answer * 100) / 100;
         displayValue.textContent = rounded;
-        displayValue.style.cssText = 'font-size: 2rem';
+        displayValue.style.cssText = 'font-size: .8em';
     } 
     else {
         displayValue.textContent = answer;
-        displayValue.style.cssText = 'font-size: 3rem';
+        displayValue.style.cssText = 'font-size: 1.3em';
     }
 }
