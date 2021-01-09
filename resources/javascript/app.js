@@ -28,8 +28,6 @@ btns.forEach(btn =>{
            resizeDisplay(answer);
 
            expression['num1'] = displayValue.textContent;
-           expression['num2'] = null;
-
        }
 
        if(displayValue.textContent.includes('.') && that == 'dot'){
@@ -81,9 +79,12 @@ window.addEventListener('keydown', e =>{
         displayValue.textContent += e.key;
     if(e.key === "=" || e.key === "Enter"){
         if(expression['num1'] != null){
+            console.log('hi');
             expression['num2'] = displayValue.textContent;
             let answer = operate(expression.operator, Number(expression.num1), Number(expression.num2));
             resizeDisplay(answer);
+            expression['num1'] = displayValue.textContent;
+            expression['num2'] = null;
         }
     }
     if(e.key === "Escape") 
@@ -108,7 +109,7 @@ function setOperator(key) {
         readyToMath();
     }   
     if(key === "+"){
-        expression.operator = 'add';
+        expression.operator = 'plus';
         readyToMath()
     }
 }
